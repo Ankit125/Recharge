@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Make your application wallet more secure using application advances secutiry features. \n\n Enable Transaction PIN which acts as 2nd level of authentication and ensures someone who got access to your mobile phone can&apos;t do unauthorized recharges. \n\n It&apos;s now also possible to secure your Wallet remotely and prevent misuse of money in your wallet if your mobile device gets lost/stolen." />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_hover"
+            android:text="Continue"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
