@@ -107,12 +107,16 @@ public class TabPageIndicator extends HorizontalScrollView implements
 		if (childCount > 1
 				&& (widthMode == MeasureSpec.EXACTLY || widthMode == MeasureSpec.AT_MOST)) {
 			if (childCount > 2) {
-				mMaxTabWidth = (int) (MeasureSpec.getSize(widthMeasureSpec) * 0.4f);
+				// text not set in textbox so this code comment
+				// mMaxTabWidth = (int) (MeasureSpec.getSize(widthMeasureSpec) *
+				// 0.4f);
 			} else {
-				mMaxTabWidth = MeasureSpec.getSize(widthMeasureSpec) / 2;
+				// text not set in textbox so this code comment
+				// mMaxTabWidth = MeasureSpec.getSize(widthMeasureSpec) / 2;
 			}
 		} else {
-			mMaxTabWidth = -1;
+			// text not set in textbox so this code comment
+			// mMaxTabWidth = -1;
 		}
 
 		final int oldWidth = getMeasuredWidth();
@@ -170,19 +174,12 @@ public class TabPageIndicator extends HorizontalScrollView implements
 		// R.drawable.tab_selector));
 
 		if (iconResId != 0) {
-			// tabView.setCompoundDrawablesWithIntrinsicBounds(iconResId, 0, 0,
-			// 0);
 			tabView.setCompoundDrawablesWithIntrinsicBounds(0, iconResId, 0, 0);
-
-			// ImageView img = new ImageView(getContext());
-			// img.setBackgroundResource(iconResId);
-			// mTabLayout.addView(img, new LinearLayout.LayoutParams(0,
-			// MATCH_PARENT, 1));
 		}
 		LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(0,
 				LayoutParams.WRAP_CONTENT, 1);
-		llp.setMargins(0, 7, 0, 3); // llp.setMargins(left, top, right,
-									// bottom);
+		llp.setMargins(0, 7, 0, 3);
+		// llp.setMargins(left, top, right, bottom);
 		tabView.setLayoutParams(llp);
 
 		mTabLayout.addView(tabView, llp);

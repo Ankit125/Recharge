@@ -69,8 +69,8 @@ public final class R {
 		public static final int vpi__bright_foreground_holo_light = 0x7f040008;
 		public static final int vpi__bright_foreground_inverse_holo_dark = 0x7f04000b;
 		public static final int vpi__bright_foreground_inverse_holo_light = 0x7f04000c;
-		public static final int vpi__dark_theme = 0x7f040019;
-		public static final int vpi__light_theme = 0x7f04001a;
+		public static final int vpi__dark_theme = 0x7f04001a;
+		public static final int vpi__light_theme = 0x7f04001b;
 		public static final int white = 0x7f040004;
 	}
 	public static final class dimen {
@@ -89,28 +89,28 @@ public final class R {
 		public static final int default_title_indicator_top_padding = 0x7f07000c;
 	}
 	public static final class drawable {
-		public static final int black = 0x7f020033;
-		public static final int layer = 0x7f020010;
-		public static final int selected_state = 0x7f02001b;
-		public static final int tab_indicator_ab_action_bar_images = 0x7f02001d;
-		public static final int tab_selected_action_bar_images = 0x7f02001e;
-		public static final int tab_selected_focused_action_bar_images = 0x7f02001f;
-		public static final int tab_selected_pressed_action_bar_images = 0x7f020020;
-		public static final int tab_selector = 0x7f020021;
-		public static final int tab_unselected_action_bar_images = 0x7f020022;
-		public static final int tab_unselected_focused_action_bar_images = 0x7f020023;
-		public static final int tab_unselected_pressed_action_bar_images = 0x7f020024;
-		public static final int turquoise = 0x7f020032;
-		public static final int viewpager_back = 0x7f02002f;
-		public static final int vpi__tab_indicator = 0x7f020027;
-		public static final int vpi__tab_selected_focused_holo = 0x7f020028;
-		public static final int vpi__tab_selected_holo = 0x7f020029;
-		public static final int vpi__tab_selected_pressed_holo = 0x7f02002a;
-		public static final int vpi__tab_unselected_focused_holo = 0x7f02002b;
-		public static final int vpi__tab_unselected_holo = 0x7f02002c;
-		public static final int vpi__tab_unselected_pressed_holo = 0x7f02002d;
-		public static final int white = 0x7f020031;
-		public static final int white_transparent = 0x7f020030;
+		public static final int black = 0x7f020037;
+		public static final int layer = 0x7f020011;
+		public static final int selected_state = 0x7f02001f;
+		public static final int tab_indicator_ab_action_bar_images = 0x7f020021;
+		public static final int tab_selected_action_bar_images = 0x7f020022;
+		public static final int tab_selected_focused_action_bar_images = 0x7f020023;
+		public static final int tab_selected_pressed_action_bar_images = 0x7f020024;
+		public static final int tab_selector = 0x7f020025;
+		public static final int tab_unselected_action_bar_images = 0x7f020026;
+		public static final int tab_unselected_focused_action_bar_images = 0x7f020027;
+		public static final int tab_unselected_pressed_action_bar_images = 0x7f020028;
+		public static final int turquoise = 0x7f020036;
+		public static final int viewpager_back = 0x7f020033;
+		public static final int vpi__tab_indicator = 0x7f02002b;
+		public static final int vpi__tab_selected_focused_holo = 0x7f02002c;
+		public static final int vpi__tab_selected_holo = 0x7f02002d;
+		public static final int vpi__tab_selected_pressed_holo = 0x7f02002e;
+		public static final int vpi__tab_unselected_focused_holo = 0x7f02002f;
+		public static final int vpi__tab_unselected_holo = 0x7f020030;
+		public static final int vpi__tab_unselected_pressed_holo = 0x7f020031;
+		public static final int white = 0x7f020035;
+		public static final int white_transparent = 0x7f020034;
 	}
 	public static final class id {
 		public static final int bottom = 0x7f0c0003;

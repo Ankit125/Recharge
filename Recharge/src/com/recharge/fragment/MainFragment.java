@@ -18,6 +18,7 @@ import com.recharge.common.constant;
 import com.recharge.recharge.Add_moneyActivity;
 import com.recharge.recharge.MyAccountActivity;
 import com.recharge.recharge.RechargePayActivity;
+import com.recharge.recharge.ShopActivity;
 import com.recharge.recharge.SignUpActivity;
 import com.recharge.recharge.TransferMoneyActivity;
 
@@ -90,7 +91,8 @@ public class MainFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
+				Intent intent = new Intent(getActivity(), ShopActivity.class);
+				startActivity(intent);
 			}
 		});
 

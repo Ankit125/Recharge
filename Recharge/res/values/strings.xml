@@ -12,6 +12,7 @@
         <item>CashPay</item>
         <item>Saved connections</item>
         <item>Transaction history</item>
+        <item>Refer &amp; Earn</item>
         <item>security settings</item>
         <item>Notifications</item>
         <item>Halp</item>
@@ -23,6 +24,7 @@
         <item>@drawable/cash</item>
         <item>@drawable/save</item>
         <item>@drawable/history</item>
+        <item>@drawable/refer</item>
         <item>@drawable/security</item>
         <item>@drawable/notification</item>
         <item>@drawable/help</item>

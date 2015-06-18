@@ -83,20 +83,27 @@ public class MainActivity extends FragmentActivity {
 		// Listado de titulos de barra de navegacion
 		NavItms = new ArrayList<Item_objct>();
 		// Agregamos objetos Item_objct al array
-		// Perfil
+		// Transfer Money
 		NavItms.add(new Item_objct(titulos[0], NavIcons.getResourceId(0, -1)));
-		// Favoritos
+		// CashPay
 		NavItms.add(new Item_objct(titulos[1], NavIcons.getResourceId(1, -1)));
-		// Eventos
+		// Saved connections
 		NavItms.add(new Item_objct(titulos[2], NavIcons.getResourceId(2, -1)));
-		// Lugares
+		// Transaction history
 		NavItms.add(new Item_objct(titulos[3], NavIcons.getResourceId(3, -1)));
-		// Etiquetas
-		NavItms.add(new Item_objct(titulos[4], NavIcons.getResourceId(4, -1)));
-		// Configuracion
+		// Rafer & Earn
+		if (!constant.get_emailid(getApplicationContext()).equals("")) {
+			NavItms.add(new Item_objct(titulos[4], NavIcons
+					.getResourceId(4, -1)));
+		}
+		// Security settings
 		NavItms.add(new Item_objct(titulos[5], NavIcons.getResourceId(5, -1)));
-		// Share
+		// Notifications
 		NavItms.add(new Item_objct(titulos[6], NavIcons.getResourceId(6, -1)));
+		// Help
+		NavItms.add(new Item_objct(titulos[7], NavIcons.getResourceId(7, -1)));
+		// About us
+		NavItms.add(new Item_objct(titulos[8], NavIcons.getResourceId(8, -1)));
 		// Declaramos y seteamos nuestrp adaptador al cual le pasamos el array
 		// con los titulos
 		NavAdapter = new NavigationAdapter(this, NavItms);
@@ -144,26 +151,52 @@ public class MainActivity extends FragmentActivity {
 					NavDrawerLayout.openDrawer(NavList);
 				}
 
-				if (position == 1) {
+				if (titulos[position - 1].equals("Transfer money")) {
 					Intent intent = new Intent(MainActivity.this,
 							TransferMoneyActivity.class);
 					startActivity(intent);
-				} else if (position == 2) {
+				} else if (titulos[position - 1].equals("CashPay")) {
 					Intent intent = new Intent(MainActivity.this,
 							CashPayActivity.class);
 					startActivity(intent);
-				} else if (position == 3) {
+				} else if (titulos[position - 1].equals("Saved connections")) {
 					Intent intent = new Intent(MainActivity.this,
 							SaveConnection.class);
 					startActivity(intent);
-				} else if (position == 4) {
+				} else if (titulos[position - 1].equals("Transaction history")) {
 					Intent intent = new Intent(MainActivity.this,
 							TransactionHistoryActivity.class);
 					startActivity(intent);
-				} else if (position == 5) {
+				} else if (titulos[position - 1].equals("Refer &amp; Earn")) {
+					// Intent intent = new Intent(MainActivity.this,
+					// TransferMoneyActivity.class);
+					// startActivity(intent);
+				} else if (titulos[position - 1].equals("security settings")) {
 					Intent intent = new Intent(MainActivity.this,
 							SecuritySettingsActivity.class);
 					startActivity(intent);
+				} else if (titulos[position - 1].equals("Notifications")) {
+					// Intent intent = new Intent(MainActivity.this,
+					// TransferMoneyActivity.class);
+					// startActivity(intent);
+				} else if (titulos[position - 1].equals("Halp")) {
+					Intent intent = new Intent(MainActivity.this,
+							Help_Activity.class);
+					startActivity(intent);
+				} else if (titulos[position - 1].equals("About us")) {
+					// Intent intent = new Intent(MainActivity.this,
+					// TransferMoneyActivity.class);
+					// startActivity(intent);
+				}
+				if (position == 1) {
+				} else if (position == 2) {
+
+				} else if (position == 3) {
+
+				} else if (position == 4) {
+
+				} else if (position == 5) {
+
 				}
 			}
 		});
